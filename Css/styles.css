@@ -1,0 +1,399 @@
+/* ======================== Header ================================= */
+
+
+
+.navBarTop{
+    padding: 0.5rem 1rem !important;
+    background: #ffffff !important;
+}
+.navbarsTop{
+    margin-left: 50px;
+}
+.navbarsTop.active{
+    color: #1f419a !important;
+    padding-bottom: 10px;
+    border-bottom: 4px solid #243b98;
+}
+.navbarsTop:hover{
+   color: #1f419a !important; 
+}
+
+.topUpBtn{
+    background: #1f419a !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    border-color: #1f419a !important;
+    margin-top: 2px;
+}
+.topUpBtn:focus{
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.amountTag{
+    color: #1f419a !important;
+    margin-right: 20px;
+    margin-top: 8px;
+}
+
+.navBarBottom{
+    background: #4671f3;
+    padding: 15px;
+}
+.navBottomRow{
+    margin-top: 10px;
+}
+.navBottomRow p{
+    color: #ffffff;
+    font-size: 14px;
+}
+.userName{
+    font-size: 20px;
+    font-weight: 600;
+}
+.reports{
+margin-top: 5px;
+margin-right: 10px;
+}
+.columnReport{
+    text-align: right;
+}
+
+
+
+/* ===========================================Footer================================================= */
+
+
+.footerDiv{
+    background: #f5f9fc;
+    padding: 10px;
+    left:0;
+    bottom:0;
+    right:0;
+}
+.footerRow{
+    margin-top: 10px;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+.footerRow p{
+    color: #1f419a;
+    font-size: 14px;
+}
+.companyName{
+    font-size: 16px;
+    font-weight: 600;
+    color: #1f419a;
+}
+.footerLinks{
+    display: inline-flex;
+    text-align: right;
+}
+.footerLinksColumn{
+    text-align: right;
+}
+.aboutTag{
+    margin-right: 20px;
+}
+
+
+
+/*--------------------------------------------------------------------------------*/
+                            /* Login Register */
+/*--------------------------------------------------------------------------------*/
+.busImage{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.formContainer{
+margin-top: 10%;
+margin-bottom: 10%;
+}
+
+.LoginForm{
+    margin-top: 40px;
+}
+
+.companyLogoLogReg{
+    width: 200px !important;
+    height: 120px !important;
+}
+
+.imageColumn{
+    text-align: center !important;
+}
+.imageTopic{
+    color: #b6b6b6;
+}
+
+.welcomePara{
+    color: #b6b6b6;
+    text-align: center;
+}
+input.valid, select.valid{
+    -webkit-box-shadow: none !important;
+    box-shadow:none !important;
+}
+input.error, select.error{
+     -webkit-box-shadow: none !important;
+    box-shadow:none !important;
+}
+
+.loginRegisterFormControl{
+  
+  border: none !important;
+  border-bottom: 2px solid #b6b6b6 !important;
+  border-radius: 0px !important;
+  padding: 5px;
+  margin-bottom: 5px;
+  width: 100%;
+}
+.loginRegisterFormControl:focus{
+    box-shadow: none !important;
+    border-bottom: 2px solid black !important;
+    padding: 5px;
+    outline: none;
+}
+.contentCheckBox{
+    text-align: left;
+}
+.contentForgotPassword{
+    text-align: right;
+}
+.loginRegisterBtn{
+    width: 100%;
+    margin-top: 10%;
+    background: #1f419a !important;
+    border: none !important;
+    border-radius: 2px !important;
+}
+
+.loginRegisterBtn:hover{
+    background: #1f419a !important;
+    border: none !important;
+     border-radius: 2px !important;
+}
+
+.loginRegisterBtn:focus{
+    box-shadow:none !important;
+    border: none !important;
+     border-radius: 2px !important;
+}
+
+.loginRegisterLink{
+    margin-top: 8%;
+    text-align: left;
+}
+.linkText{
+    color: #7e808c;
+    text-decoration: none;
+}
+.linkText:hover{
+    text-decoration: none !important;
+    color: #7e808c;
+}
+.contentCheckBox label{
+    color: #7e808c;
+}
+.form-groupmt{
+    margin-top: 20px;
+}
+
+
+
+
+
+
+/* =================================Customer Dashboard Body ======================================= */
+
+.backgroundStripe{
+    position: relative;
+    background: #1f419a;
+    height: 30vh;
+}
+.companyLogo{
+    width: 50px !important;
+    height: 50px !important;
+}
+.cardDetailsColumn{
+    text-align: center;
+    margin-top: 20px;
+}
+.userDetailsCard{
+    top: -20%;
+    min-width: 250px !important;
+    box-shadow: 3px 2px 15px -2px grey;
+}
+.cardEmailColumn{
+     text-align: center;
+     margin-top: -10px;
+}
+.cardNumberColumn{
+    text-align: center;
+    margin-top: -2px;
+}
+.cardBtnColumn{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+.bodyRow{
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}
+.statisticsCard{
+    min-width: 250px !important;
+    top: -10%;
+}
+.profileImage{
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.graphImage{
+    width: 200px;
+}
+
+.graphColumn{
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+}
+
+.tripsDiv{
+    position: absolute;
+    margin-left: 40px;
+    margin-top: 50px;
+}
+.trips{
+    margin-top: -15px;
+    font-size: 14px;
+}
+.tripAmount{
+    font-size: 20px;
+    font-weight: 800;
+    color: #ef657f;
+}
+.customerName{
+    color: #807f87;
+}
+.customerEmail{
+    color: #1f419a;
+}
+.customerNumber{
+    color: #c0c3ca;
+}
+.logoutBtn{
+    width: 200px !important;
+    color: #7f7e86 !important;
+    border-radius: 20px !important;
+    background: none !important;
+    border: 2px solid  #1f419a !important;
+}
+.logoutBtn:focus{
+    outline: none !important;
+    box-shadow: none !important;
+}
+.userRecentTripsCard{
+    top: -20%;
+    box-shadow: 3px 2px 15px -2px grey;
+    background-image: linear-gradient(to bottom, #accbee 0%, #e7f0fd 100%);
+}
+.recentTripsDriverImage{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.oneTripDetailRow{
+    background: #f4f7ff;
+    padding: 10px;
+    margin: 0px !important;
+}
+.busRoute{
+    margin-top: -15px;
+    font-size: 12px;
+    color: #777a89;
+}
+.driverDetailsColumn{
+    text-align: left;
+    display: inline-flex;
+}
+.tripDate{
+    margin-top: -15px;
+    font-size: 10px;
+    color: #a9abb8;
+}
+.tripTime{
+    font-size: 10px;
+    margin-top: 5px;
+    color: #a9abb8;
+}
+.driverDetails{
+    font-size: 14px;
+    color: #1f419a;
+    font-weight: 500;
+}
+.tripCost{
+    font-size: 12px;
+    font-weight: 800;
+    color: #4d63ff;
+}
+.tripCode{
+    font-size: 8px;
+    margin-top: -15px;
+    color: #646874;
+}
+.colPaddingRmv{
+    padding: 0px !important;
+}
+.oneTripDetailsColumn{
+    padding-right: 8px !important;
+    padding-left: 8px !important;
+    padding-bottom: 8px;
+}
+.recentTripCardHeader{
+    background: none !important;
+    border-bottom: none !important;
+    font-size: 15PX;
+    font-weight: 600;
+    color: #6e7995;
+}
+.twoTripDetailsRow{
+    margin-bottom: 10px;
+}
+.viewMoreBtnColumn{
+    text-align: right;
+    padding-right: 8px !important;
+    margin-top: 30px;
+}
+.viewAllBtn{
+    width: 200px !important;
+    color: #1f419a !important;
+    border-radius: 10px !important;
+    background: none !important;
+    border: 2px solid  #1f419a !important;
+}
+.viewAllBtn:focus{
+    outline: none !important;
+    box-shadow: none !important;
+}
+.leftsideCardsColumn{
+    margin-bottom: 20px;
+}
+
+
+/* =============================Email-Verity==================================== */
+
+.email-verify-row{
+    margin: 0px !important;
+}
+
+.email-verify-card{
+    margin-top: 15%;
+}
+
+.email-verify-body{
+    background:#807f87;
+}
