@@ -1,10 +1,10 @@
 <?php
 session_start();
 
-if(!isset($_SESSION['Userid']) && empty($_SESSION['Userid'])){
-    header('Location: ../../index.php');
-    exit();
-}
+// if(!isset($_SESSION['Userid']) && empty($_SESSION['Userid'])){
+//     header('Location: ../../index.php');
+//     exit();
+// }
 
 ?>
 <!DOCTYPE html>
