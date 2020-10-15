@@ -1,0 +1,27 @@
+{
+  "name": "transport",
+  "version": "1.0.0",
+  "description": "Designed for a SLTB(Srilanka Transport Board). This containe User functions. Used PHP, MySQL, BOOTSTRAP, JQUARY for Development",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "fontawesome-4.7": "^4.7.0",
+    "jquery": "^3.5.1",
+    "sweetalert2": "^10.3.5",
+    "jquery-form-validator": "^2.3.79"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KGMalith/TransportApp-Web.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KGMalith/TransportApp-Web/issues"
+  },
+  "homepage": "https://github.com/KGMalith/TransportApp-Web#readme"
+}
