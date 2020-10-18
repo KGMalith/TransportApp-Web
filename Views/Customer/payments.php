@@ -88,7 +88,6 @@ $resultsSet = mysqli_query($con, $sql);
                                             <th>Time</th>
                                             <th>Card Number</th>
                                             <th>Amount</th>
-                                            <th style="width: 8%;">Actions</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -105,9 +104,6 @@ $resultsSet = mysqli_query($con, $sql);
                                                 <td><?php echo $time ?></td>
                                                 <td><?php echo $cardNum ?></td>
                                                 <td> <?php echo $amount ?></td>
-                                                <td class="text-center"><a href="../../Includes/deletePayment.php?pid=<?php echo $Pid ?>" class="btn-del"><button type="button" class="btn btn-danger btn-sm" data-toggle="tooltip" data-placement="top" title="Delete">
-                                                            <i class="fa fa-trash"></i>
-                                                        </button></a></td>
                                             </tr>
                                         <?php
                                         }
