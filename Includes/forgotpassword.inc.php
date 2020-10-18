@@ -20,13 +20,13 @@ if (isset($_POST['resetPass'])) {
                 $userID = $colName['uid'];
                 $isVerified = $colName['verified'];
 
-                if ($isVerified == false) {
+                if ($isVerified == 0) {
                     $_SESSION['status'] = "notVerified";
                     header("Location: ../Views/recoverpassword.php");
                     exit();
                 } else {
                     $token = bin2hex(random_bytes(50));
-                    $verified = false;
+                    $verified = 0;
                     $query = "UPDATE users SET token='$token' ,verified='$verified' WHERE uid='$userID'";
                     $results = mysqli_query($con, $query);
 

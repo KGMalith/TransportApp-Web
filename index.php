@@ -1,5 +1,6 @@
 <?php
 session_start();
+ob_start();
 ?>
 <!DOCTYPE html>
 
@@ -14,7 +15,7 @@ session_start();
     <link rel="stylesheet" href="node_modules/jquery-form-validator/form-validator/theme-default.min.css">
     <link rel="stylesheet" href="node_modules/sweetalert2/dist/sweetalert2.all.min.css">
     <link rel="stylesheet" href="Css/styles.css">
-    <title>Document</title>
+    <title>Welcome</title>
 </head>
 
 <body>
@@ -38,10 +39,10 @@ session_start();
                                 <div class="container">
                                     <p class="welcomePara">Welcome back! Please log in to your account</p>
                                     <div class="form-group form-groupmt" controlId="formLoginEmailName">
-                                        <input type="email" placeholder="Email" name="email" class="loginRegisterFormControl" data-validation="required " data-validation-error-msg="Email Cannot be Empty" />
+                                        <input type="email" placeholder="Email" name="email" class="loginRegisterFormControl" data-validation="required " data-validation-error-msg="Email Cannot be Empty" value="<?php if(isset($_COOKIE['emailcookie'])){echo $_COOKIE['emailcookie'];} ?>"/>
                                     </div>
                                     <div class="form-group" controlId="formLoginPassword">
-                                        <input type="password" placeholder="Password" name="password" class="loginRegisterFormControl" data-validation="required " data-validation-error-msg="Password Cannot be Empty" />
+                                        <input type="password" placeholder="Password" name="password" class="loginRegisterFormControl" data-validation="required " data-validation-error-msg="Password Cannot be Empty" value="<?php if(isset($_COOKIE['passwordcookie'])){echo $_COOKIE['passwordcookie'];} ?>"/>
                                     </div>
                                     <div class="row">
                                         <div class="col contentCheckBox">

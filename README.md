@@ -51,9 +51,18 @@ This is 4 member group project for 3rd year 2nd semester at SLIIT ( Sri Lanka In
  ### 5. Project Setup Steps
 
     * Open Project folder with Vs Code or any IDE (Vs Code is Better)
-    * Open Terminal and install npm (run command "npm install")
+    * Open Terminal and install npm packages(run command "npm install")
     * Start Xampp Server and insert Url in a web browser as "http://localhost:8080/Transport/"
-    * Create Account and Enjoy!
+   ### Important 
+    * This Include Customer,Inspector,Driver functionalities
+    * When you Create Accounts as Driver and Customer Please Provide valid emails. Email verifications are required to Login system
+    * To Login as Inspector Please Download Admin panel and run It. 
+      ```git
+         Admin:
+            $ git clone git@github.com : (https://github.com/KGMalith/TransportApp-Web-Admin.git)
+      ```
+      Using admin panel please create Inspector account. Using those Login credintials Please login to system from here.
+    * Create Accounts and Enjoy!
 
 
     

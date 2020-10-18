@@ -5,10 +5,16 @@
   "main": "index.js",
   "dependencies": {
     "bootstrap": "^4.5.2",
+    "datatables": "^1.10.18",
+    "datatables.net": "^1.10.22",
+    "datatables.net-buttons": "^1.6.5",
+    "datatables.net-buttons-bs4": "^1.6.5",
+    "datatables.net-dt": "^1.10.22",
     "fontawesome-4.7": "^4.7.0",
+    "instascan": "^1.0.0",
     "jquery": "^3.5.1",
-    "sweetalert2": "^10.3.5",
-    "jquery-form-validator": "^2.3.79"
+    "jquery-form-validator": "^2.3.79",
+    "sweetalert2": "^10.3.5"
   },
   "devDependencies": {},
   "scripts": {
