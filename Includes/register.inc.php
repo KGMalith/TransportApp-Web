@@ -48,9 +48,9 @@ if(isset($_POST['Register'])){
                     $hashedpwd = password_hash($password, PASSWORD_BCRYPT);
                     $token = bin2hex(random_bytes(50));
                     $identity_token = bin2hex(random_bytes(10));
-                    $verified = false;
+                    $verified = 0;
 
-                    mysqli_stmt_bind_param($stmt, "sssbs", $identity_token, $email, $hashedpwd, $token, $verified, $role);
+                    mysqli_stmt_bind_param($stmt, "ssssss", $identity_token, $email, $hashedpwd, $token, $verified, $role);
                     if(mysqli_stmt_execute($stmt)){
                         $user_id = $con->insert_id;
                         $_SESSION['Userid'] = $user_id;
@@ -72,6 +72,14 @@ if(isset($_POST['Register'])){
                             $mob =  "+94"+ $mobile;
                             mysqli_stmt_bind_param($stmt, "ssss", $user_id, $cusname, $email, $mob);
                             mysqli_stmt_execute($stmt);
+
+                            $amount = '0.00';
+                            $query = "INSERT INTO account_balance (uid,amount) VALUES('$user_id',' $amount')";
+                            mysqli_query($con,$query);
+
+                            $tripCount = 0;
+                            $query2 = "INSERT INTO trip_count (uid,count) VALUES('$user_id',' $tripCount')";
+                            mysqli_query($con, $query2);
                         }
                         
                         sendVerificationEmail($email, $token);

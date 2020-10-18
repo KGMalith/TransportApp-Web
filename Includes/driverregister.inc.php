@@ -51,9 +51,9 @@ if (isset($_POST['RegisterDriver'])) {
                     $hashedpwd = password_hash($password, PASSWORD_BCRYPT);
                     $token = bin2hex(random_bytes(50));
                     $identity_token = bin2hex(random_bytes(10));
-                    $verified = false;
+                    $verified = 0;
 
-                    mysqli_stmt_bind_param($stmt, "ssssbs", $identity_token ,$email, $hashedpwd, $token, $verified, $role);
+                    mysqli_stmt_bind_param($stmt, "ssssss", $identity_token ,$email, $hashedpwd, $token, $verified, $role);
                     if(mysqli_stmt_execute($stmt)){
                         $user_id = $con->insert_id;
                         $_SESSION['Userid'] = $user_id;
@@ -73,6 +73,10 @@ if (isset($_POST['RegisterDriver'])) {
                         } else {
                             mysqli_stmt_bind_param($stmt, "sssssss", $user_id, $drivername, $email, $busType, $regNumber, $busStart, $busEnd);
                             mysqli_stmt_execute($stmt);
+
+                            
+                            $query2 = "INSERT INTO driver_trip_count (driver_id) VALUES('$user_id')";
+                            mysqli_query($con, $query2);
                         }
                         sendVerificationEmail($email, $token);
                         $_SESSION['status'] = "registerSuccess";

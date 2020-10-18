@@ -14,7 +14,7 @@ session_start();
     <link rel="stylesheet" href="../node_modules/jquery-form-validator/form-validator/theme-default.min.css">
     <link rel="stylesheet" href="../node_modules/sweetalert2/dist/sweetalert2.all.min.css">
     <link rel="stylesheet" href="../Css/styles.css">
-    <title>Document</title>
+    <title>Register</title>
 </head>
 
 <body>

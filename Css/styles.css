@@ -242,6 +242,11 @@ input.error, select.error{
     margin-right: 0px !important;
     margin-left: 0px !important;
 }
+.bodyRowReports{
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+    min-height: 39vh;
+}
 .statisticsCard{
     min-width: 250px !important;
     top: -10%;
@@ -382,7 +387,76 @@ input.error, select.error{
 .leftsideCardsColumn{
     margin-bottom: 20px;
 }
+.columnQR{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+.generateQR{
+    min-height: 200px;
 
+}
+.qrCodeCard{
+    margin-top: -20%;
+    margin-bottom: 5%;
+}
+.topupHeader{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight: 600;
+    color: #2242a3;
+}
+.label-text{
+    margin-bottom: 10px;
+    color: #4d63ff;
+}
+
+.card-logo{
+    margin-top: 8px;
+}
+.cardLogos{
+    margin-top: 20px;
+}
+.paymentContinue{
+    min-width: 150px !important;
+    background: #1f419a !important;
+    border: none !important;
+    border-radius: 2px !important;
+}
+.paymentContinue:hover{
+    background: #1f419a !important;
+    border: none !important;
+     border-radius: 2px !important;
+}
+
+.paymentContinue:focus{
+    box-shadow:none !important;
+    border: none !important;
+     border-radius: 2px !important;
+}
+.paymentCancel{
+    min-width: 150px !important;
+    color: #1f419a !important;
+    border-radius: 10px !important;
+    background: none !important;
+    border: 2px solid  #1f419a !important;
+}
+.paymentCancel:focus{
+    outline: none !important;
+    box-shadow: none !important;
+}
+.imagecolumn{
+    position: absolute;
+}
+.buttonColumn{
+    position: absolute;
+}
+.buttonSet{
+    margin-top: 390px;
+}
+.topupBusImage{
+    margin-left: 170px;
+    margin-top: -100px;
+}
 
 /* =============================Email-Verity==================================== */
 
@@ -396,4 +470,29 @@ input.error, select.error{
 
 .email-verify-body{
     background:#807f87;
+}
+
+/* =================================Inspector Dashboard ==================================== */
+
+.QRScannerCam{
+    width: 100%;
+}
+
+.card-table{
+    margin-top: -10%;
+}
+
+/* =====================================Driver Dashboard ========================================== */
+.buttonRowJourney{
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+.locationRow{
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+.bodyRowDriver{
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+    margin-top: -100px;
 }

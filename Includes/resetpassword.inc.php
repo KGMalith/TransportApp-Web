@@ -13,7 +13,7 @@ if (isset($_POST['resetPass'])) {
         exit();
     } else {
         $hashedpwd = password_hash($password, PASSWORD_BCRYPT);
-        $verified = true;
+        $verified = 1;
 
         $sql = "UPDATE users SET password='$hashedpwd' ,verified='$verified' WHERE token='$token'";
         $results = mysqli_query($con, $sql);

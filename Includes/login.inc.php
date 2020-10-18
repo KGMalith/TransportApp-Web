@@ -10,7 +10,7 @@ if (isset($_POST['signin'])) {
     //Check Fields are Empty
     if (empty($email) || empty($password)) {
         $_SESSION['status'] = "emptyFields";
-        header("Location: ../index.php?err=kjkj");
+        header("Location: ../index.php");
         exit();
     } else {
         $sql = "SELECT * FROM users WHERE email=?";
@@ -53,7 +53,7 @@ if (isset($_POST['signin'])) {
                         $_SESSION['email'] = $dbEmail;
                         $_SESSION['name'] = $username;
 
-                        if ($isVerified == true) {
+                        if ($isVerified == 1) {
                             $_SESSION['Userid'] = $dbUid;
                             setcookie('emailcookie', $email, time() + (86400 * 30), "/");
                             setcookie('passwordcookie', $password, time() + (86400 * 30), "/");
@@ -87,7 +87,7 @@ if (isset($_POST['signin'])) {
                         $_SESSION['email'] = $dbEmail;
                         $_SESSION['name'] = $username;
 
-                        if ($isVerified == true) {
+                        if ($isVerified == 1) {
                             
                             $_SESSION['Userid'] = $dbUid;
                             setcookie('emailcookie', '', time() - (86400 * 30), "/");
