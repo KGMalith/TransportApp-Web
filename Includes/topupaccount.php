@@ -17,7 +17,14 @@ if(isset($_POST['pay'])){
         $sql = "INSERT INTO payment_details (uid,cardNumber,amount,topup_date,topup_time) VALUES('$userID','$cardNumber','$amount','$date','$time')";
         $result = mysqli_query($con,$sql);
         if($result){
-            $query = "UPDATE account_balance SET amount='$amount' WHERE uid='$userID'";
+            $sql = "SELECT amount FROM account_balance WHERE uid='$userID'";
+            $results = mysqli_query($con,$sql);
+            $row = mysqli_fetch_assoc($results);
+            $currentBalance = $row['amount'];
+
+            $newBalance = $currentBalance + $amount;
+
+            $query = "UPDATE account_balance SET amount='$newBalance' WHERE uid='$userID'";
             $res = mysqli_query($con,$query);
             if($res){
                 $_SESSION['status'] = "topUpSuccess";
