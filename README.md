@@ -1,6 +1,6 @@
 # Online Transport Management System
 
-Designed for a SLTB(Srilanka Transport Board). This containe User functions. Used PHP, MySQL, BOOTSTRAP, JQUARY for Development
+Designed for a SLTB(Srilanka Transport Board). This contain User functions. Used PHP, MySQL, BOOTSTRAP, JQUARY for Development
 
 ---
 
